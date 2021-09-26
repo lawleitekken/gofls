@@ -40,6 +40,7 @@ async def query_mgs(client: Bot, message: Message):
                         try:
                             await client.send_chat_action(
                                 chat_id=message.from_user.id,
+                                caption=message.caption,
                                 action="upload_document"
                             )
                         except Exception:
@@ -78,6 +79,7 @@ async def query_mgs(client: Bot, message: Message):
                         try:
                             await client.send_chat_action(
                                 chat_id=message.from_user.id,
+                                caption=message.caption,
                                 action="upload_video"
                             )
                         except Exception:
