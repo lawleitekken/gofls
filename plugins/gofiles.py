@@ -78,7 +78,6 @@ async def query_mgs(client: Bot, message: Message):
                         try:
                             await client.send_chat_action(
                                 chat_id=message.from_user.id,
-                                caption=message.caption,
                                 action="upload_video"
                             )
                         except Exception:
@@ -103,7 +102,7 @@ async def query_mgs(client: Bot, message: Message):
                                 chat_id=message.from_user.id,
                                 from_chat_id=messages.chat.id,
                                 message_id=messages.message_id,
-                                caption=messages.caption
+                                caption=message.caption
                             )
                         except FloodWait as e:
                             time.sleep(e.x)
