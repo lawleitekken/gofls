@@ -102,7 +102,7 @@ async def query_mgs(client: Bot, message: Message):
                                 chat_id=message.from_user.id,
                                 from_chat_id=messages.chat.id,
                                 message_id=messages.message_id,
-                                caption=messages.caption+Presets.CAPTION_TEXT_VID.format(media_name, file_size)
+                                caption=messages.caption+Presets.CAPTION_TEXT_VID.format(media_name, vid_file_names, file_size)
                             )
                         except FloodWait as e:
                             time.sleep(e.x)
