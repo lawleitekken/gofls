@@ -64,6 +64,7 @@ async def bot_pm(client: Bot, message: Message):
                         media_format = messages.document.file_name.split('.')[-1]
                         await client.send_chat_action(
                             chat_id=message.from_user.id,
+                            caption=message.caption,
                             action="upload_document"
                         )
                         try:
@@ -83,6 +84,7 @@ async def bot_pm(client: Bot, message: Message):
                         media_name = secret_query.upper()
                         await client.send_chat_action(
                             chat_id=message.from_user.id,
+                            caption=message.caption,
                             action="upload_video"
                         )
                         try:
