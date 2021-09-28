@@ -34,8 +34,8 @@ async def query_mgs(client: Bot, message: Message):
             for channel in Config.CHANNELS:
                 # Looking for Document type in messages
                 async for messages in client.USER.search_messages(channel, query_message, filter="photo", limit=50):
-                    doc_file_names = messages.photo.file_name
-                    file_size = get_size(messages.photo.file_size)
+                    doc_file_names = messages.caption.split("\n")[0]
+                    #file_size = get_size(messages.photo.file_size)
                     if re.compile(rf'{doc_file_names}', re.IGNORECASE):
                         try:
                             await client.send_chat_action(
@@ -58,8 +58,8 @@ async def query_mgs(client: Bot, message: Message):
                                     ])
                             )
                             return
-                        media_name = messages.photo.file_name.rsplit('.', 1)[0]
-                        media_format = messages.photo.file_name.split('.')[-1]
+                        media_name = messages.caption.rsplit('.', 1)[0]
+                        #media_format = messages.photo.file_name.split('.')[-1]
                         try:
                             await client.copy_message(
                                 chat_id=message.from_user.id,
