@@ -18,5 +18,5 @@ class Presets(object):
     NO_MEDIA = "Requested movie: <b>{}</b>\n\n<b>Not available " \
                "Right Now</b>\n<code>Possible Causes : 🤔\n\n⭕️ Not " \
                "released yet</code>\n⭕️ <a href='https://www.google.com/search?q={}'> Check Spelling in Google</a>\n" \
-               "<code>⭕️ Try In Below Format\nEx: SpiderMan 2021 Telugu\n⭕ Request Ur Movie<a href='@justwatch_movies'>Here</a>\n \</code>"
+               "<code>⭕️ Try In Below Format\nEx: SpiderMan 2021 Telugu\n⭕ Request Ur Movie<a href='https://t.me/justwatch_movies'> <b>Here<\b></a>\n</code>"
     BLOCK_LIST = ['http://', 'https://', '@', '#', 'bit.ly', 't.me', '/']
