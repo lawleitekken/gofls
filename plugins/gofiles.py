@@ -72,7 +72,7 @@ async def query_mgs(client: Bot, message: Message):
                         user_message[id] = message.message_id
                 # Looking for video type in messages
                 async for messages in client.USER.search_messages(channel, query_message, filter="text", limit=50):
-                    vid_file_names = messages.caption
+                    vid_file_names = message.text
                     #file_size = get_size(messages.video.file_size)
                     if re.compile(rf'{vid_file_names}', re.IGNORECASE):
                         try:
