@@ -71,14 +71,14 @@ async def query_mgs(client: Bot, message: Message):
                             time.sleep(e.x)
                         user_message[id] = message.message_id
                 # Looking for video type in messages
-                async for messages in client.USER.search_messages(channel, query_message, filter="text", limit=50):
-                    vid_file_names = messages.text
-                    #file_size = get_size(messages.video.file_size)
+                async for messages in client.USER.search_messages(channel, query_message, filter="video", limit=50):
+                    vid_file_names = messages.caption
+                    file_size = get_size(messages.video.file_size)
                     if re.compile(rf'{vid_file_names}', re.IGNORECASE):
                         try:
                             await client.send_chat_action(
                                 chat_id=message.from_user.id,
-                                #action="upload_video"
+                                action="upload_video"
                             )
                         except Exception:
                             query_bytes = query_message.encode("ascii")
