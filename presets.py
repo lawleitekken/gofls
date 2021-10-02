@@ -15,8 +15,8 @@ class Presets(object):
                   "available in our DB !</code>"
     PM_ERROR = "<b>Unable to send movie</b> ⛔️\n<code>Click the below button\nAsk here for movies later!</code>"
     MEDIA_SEND_TEXT = "<code> 𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙈𝙤𝙫𝙞𝙚🥳</code>"
-    NO_MEDIA = "Requested movie: <b>{}</b>\n\n<b> Sorry, No Movie Related to the Given Word 🥺 Please Follow Below points \n\n" \
-               "⭕️ Please Check <a href='https://www.google.com/search?q={}'> Spelling in Google</a> And Search \n" \
-               "⭕️ Just Type The Movie Name Year Language Ex: <b>SpiderMan 2021 Telugu</b>\n" \
-               "⭕ Still Movie Not Found Plz Message Ur Request Movie<a href='https://t.me/justwatch_movies'> 𝙃𝙚𝙧𝙚</a>\n"
+    NO_MEDIA = "Requested movie: <b>{}</b>\n\n 𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 🥺 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐨𝐥𝐥𝐨𝐰 𝐁𝐞𝐥𝐨𝐰 𝐩𝐨𝐢𝐧𝐭𝐬 \n\n" \
+               "⭕️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 <𝐚 𝐡𝐫𝐞𝐟='𝐡𝐭𝐭𝐩𝐬://𝐰𝐰𝐰.𝐠𝐨𝐨𝐠𝐥𝐞.𝐜𝐨𝐦/𝐬𝐞𝐚𝐫𝐜𝐡?𝐪={}'> 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐢𝐧 𝐆𝐨𝐨𝐠𝐥𝐞</𝐚> 𝐀𝐧𝐝 \n" \
+               "⭕️ 𝐉𝐮𝐬𝐭 𝐓𝐲𝐩𝐞 𝐓𝐡𝐞 𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 𝐘𝐞𝐚𝐫 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐄𝐱: <𝐛>𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮</𝐛>\𝐧" \               
+               "⭕ 𝐒𝐭𝐢𝐥𝐥 𝐌𝐨𝐯𝐢𝐞 𝐍𝐨𝐭 𝐅𝐨𝐮𝐧𝐝 𝐏𝐥𝐳 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐔𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐌𝐨𝐯𝐢𝐞<𝐚 𝐡𝐫𝐞𝐟='𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐣𝐮𝐬𝐭𝐰𝐚𝐭𝐜𝐡_𝐦𝐨𝐯𝐢𝐞𝐬'> 𝙃𝙚𝙧𝙚</a>\n"
     BLOCK_LIST = ['http://', 'https://', '@', '#', 'bit.ly', 't.me', '/']
