@@ -17,6 +17,7 @@ class Presets(object):
     MEDIA_SEND_TEXT = "<code> 𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙈𝙤𝙫𝙞𝙚🥳</code>"
     NO_MEDIA = "𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐦𝐨𝐯𝐢𝐞: <b>{}</b>\n\n𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 🥺 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐨𝐥𝐥𝐨𝐰 𝐁𝐞𝐥𝐨𝐰 𝐏𝐨𝐢𝐧𝐭𝐬 \n\n" \
                "⭕️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 <a href='https://www.google.com/search?q={}'> 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐢𝐧 𝐆𝐨𝐨𝐠𝐥𝐞 </a>\n" \
-               "⭕️ 𝐄𝐱: 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮 \n" \
+               "⭕️ 𝐄𝐱 Format: 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮 \n" \
+               "⭕️ 𝐒𝐭𝐢𝐥𝐥 𝐍𝐨 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐏𝐥𝐳 𝐒𝐞𝐧𝐝 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐈𝐍 👇
                "⭕️ <b>Request Group: </b><a href='https://t.me/justwatch_movies'> Group</a>"
     BLOCK_LIST = ['http://', 'https://', '@', '#', 'bit.ly', 't.me', '/']
