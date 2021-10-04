@@ -33,7 +33,7 @@ async def query_mgs(client: Bot, message: Message):
         try:
             for channel in Config.CHANNELS:
                 # Looking for Document type in messages
-                async for messages in client.USER.search_messages(channel, query_message, filter="photo", limit=1):
+                async for messages in client.USER.search_messages(channel, query_message, filter="photo", limit=5):
                     doc_file_names = messages.caption.split("\n")[0]
                     #file_size = get_size(messages.photo.file_size)
                     if re.compile(rf'{doc_file_names}', re.IGNORECASE):
@@ -72,7 +72,7 @@ async def query_mgs(client: Bot, message: Message):
                         user_message[id] = message.message_id
                 # Looking for video type in messages
                 async for messages in client.USER.search_messages(channel, query_message, filter="text", limit=5):
-                    vid_file_names = message.text.rsplit('.', 1)[0]
+                    vid_file_names = message.text.upper()
                     #file_size = get_size(messages.video.file_size)
                     if re.compile(rf'{vid_file_names}', re.IGNORECASE):
                         try:
@@ -96,7 +96,7 @@ async def query_mgs(client: Bot, message: Message):
                                     ])
                             )
                             return
-                        #media_name = message.text.upper()
+                        media_name = message.text.upper()
                         try:
                             await client.copy_message(
                                 chat_id=message.from_user.id,
