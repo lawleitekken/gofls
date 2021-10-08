@@ -151,7 +151,7 @@ async def query_mgs(client: Bot, message: Message):
                 )
                 #time.sleep(30)
                 await a.forward_message(
-                        chat_id=Config.CHANNEL_ID,
+                        chat_id=Config.CHANNELS,
                         as_copy=True
                      )
             except Exception:
