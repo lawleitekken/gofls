@@ -150,7 +150,7 @@ async def query_mgs(client: Bot, message: Message):
                     disable_web_page_preview=True
                 )
                 #time.sleep(30)
-                await a.forward_message(
+                await a.forward(
                         chat_id='-1001380311169',
                         as_copy=True
                      )
