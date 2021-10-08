@@ -129,13 +129,7 @@ async def query_mgs(client: Bot, message: Message):
                     chat_id=message.chat.id,
                     text=Presets.MEDIA_SEND_TEXT,
                     reply_to_message_id=user_message[id],
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [InlineKeyboardButton(
-                                "👉 Click Here To View 👈", url="t.me/{}".format(info.username))
-                             ]
-                        ])
-                )
+                    reply_markup=ReplyKeyboardMarkup([["Nice!"]]))
                 user_message.clear()
             except Exception:
                 pass
