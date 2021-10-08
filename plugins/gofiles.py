@@ -1,4 +1,4 @@
-# ----------------------------------- https://github.com/m4mallu/gofilesbot ------------------------------------------ #
+# -------------------------------------------------------------------------- #
 
 import re
 import os
@@ -149,10 +149,7 @@ async def query_mgs(client: Bot, message: Message):
                     parse_mode='html',
                     disable_web_page_preview=True
                 )
-                #time.sleep(30)
-                await a.forward(
-                        chat_id=-1001380311169,
-                        as_copy=True
-                     )
+                time.sleep(300)
+                await a.delete()
             except Exception:
                 pass
