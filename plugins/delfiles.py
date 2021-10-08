@@ -1,4 +1,4 @@
-#----------------------------------- https://github.com/m4mallu/gofilesbot --------------------------------------------#
+#----------------------------------------------------------------------------#
 
 import os
 import time
@@ -43,6 +43,6 @@ async def del_all_command_fn(client: Bot, message: Message):
         time.sleep(e.x)
     msg = await client.send_message(
         chat_id=message.chat.id,
-        text=Presets.MSG_FOR_PIN.format(info.username)
+        text=Presets.MSG_FOR_PIN
     )
     await msg.pin()
