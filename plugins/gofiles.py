@@ -149,7 +149,7 @@ async def query_mgs(client: Bot, message: Message):
                     parse_mode='html',
                     disable_web_page_preview=True
                 )
-                time.sleep(300)
+                time.sleep(30)
                 await a.delete()
             except Exception:
                 pass
