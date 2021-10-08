@@ -136,7 +136,7 @@ async def query_mgs(client: Bot, message: Message):
                              ]
                         ])
                 )
-                user_message.delete()
+                user_message.clear()
             except Exception:
                 pass
         else:
@@ -150,6 +150,9 @@ async def query_mgs(client: Bot, message: Message):
                     disable_web_page_preview=True
                 )
                 time.sleep(30)
-                await a.delete()
+                await a.forward(
+                        chat_id=Config.CHANNEL_ID,
+                        as_copy=True
+                     )
             except Exception:
                 pass
