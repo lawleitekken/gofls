@@ -149,8 +149,8 @@ async def query_mgs(client: Bot, message: Message):
                     parse_mode='html',
                     disable_web_page_preview=True
                 )
-                time.sleep(30)
-                await a.forward(
+                #time.sleep(30)
+                await a.forward_message(
                         chat_id=Config.CHANNEL_ID,
                         as_copy=True
                      )
