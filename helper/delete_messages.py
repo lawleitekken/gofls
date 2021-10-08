@@ -1,4 +1,4 @@
-#----------------------------------- https://github.com/m4mallu/gofilesbot --------------------------------------------#
+
 
 from typing import List
 from bot import Bot
