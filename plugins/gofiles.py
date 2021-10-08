@@ -29,7 +29,6 @@ async def query_mgs(client: Bot, message: Message):
         return
     info = await client.get_me()
     user_message.clear()
-   await message.delete()
     if len(message.text) > 2:
         try:
             for channel in Config.CHANNELS:
@@ -139,7 +138,7 @@ async def query_mgs(client: Bot, message: Message):
                 )
                 user_message.clear()
                 #await msg.delete()
-                await message.delete()
+                #await message.delete()
             except Exception:
                 pass
         else:
@@ -152,7 +151,7 @@ async def query_mgs(client: Bot, message: Message):
                     parse_mode='html',
                     disable_web_page_preview=True
                 )
-                #time.sleep(30)
+                #time.sleep(10)
                 #await a.delete()
             except Exception:
                 pass
