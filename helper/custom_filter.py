@@ -1,4 +1,3 @@
-#----------------------------------- https://github.com/m4mallu/gofilesbot --------------------------------------------#
 
 from pyrogram import filters
 from pyrogram.types import Message
