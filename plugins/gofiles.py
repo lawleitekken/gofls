@@ -29,7 +29,7 @@ async def query_mgs(client: Bot, message: Message):
         return
     info = await client.get_me()
     user_message.clear()
-    message.delete()
+   await message.delete()
     if len(message.text) > 2:
         try:
             for channel in Config.CHANNELS:
