@@ -129,7 +129,9 @@ async def query_mgs(client: Bot, message: Message):
                     chat_id=message.chat.id,
                     text=Presets.MEDIA_SEND_TEXT,
                     reply_to_message_id=user_message[id],
-                    reply_markup=ReplyKeyboardMarkup([["Nice!"]]))
+                    parse_mode='html',
+                    disable_web_page_preview=True
+                )
                 user_message.clear()
             except Exception:
                 pass
