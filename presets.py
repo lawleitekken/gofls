@@ -8,8 +8,8 @@ class Presets(object):
                    "<code>Just Keep this message live Here</code>😉\n\n" \
                   
     CLEAN_CHAT_MSG = "⚠️ <b>Deleting all messages..</b>"
-    MSG_FOR_PIN = "<b>For getting medias from here..</b>\n\n🔛 <code>Please start</code> @{} <code>in PM\n\n" \
-                  "Send the exact Movie name.⭕️ 🔎 𝐅𝐨𝐫𝐦𝐚𝐭 : 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮.\n\n🔊 I'll reply the Movie Links in PM if available in our channel !</code>"
+    MSG_FOR_PIN = "<b>For Getting Movie Links from here..</b>\n\n🔛 <code>Please start</code> @{} in PM\n\n" \
+                  "Send the exact Movie name Example : 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮.\n\n🔊 I'll reply the Movie Links in PM if available in our channel !</code>"
 
     BOT_PM_TEXT = "<b>Sorry.. 😢</b>\n\n<code>Bot won't work in PM, Ask in ma Group. I'll reply the file in PM if " \
                   "available in our DB !</code>"
