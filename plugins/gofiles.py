@@ -124,7 +124,8 @@ async def query_mgs(client: Bot, message: Message):
                 pass
             return
         if user_message.keys():
-          updated_query = query_message.replace(" ", "+")
+        else:
+            updated_query = query_message.replace(" ", "+")
             try:
                 await client.send_message(
                     chat_id=message.chat.id,
