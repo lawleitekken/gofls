@@ -124,10 +124,11 @@ async def query_mgs(client: Bot, message: Message):
                 pass
             return
         if user_message.keys():
+          updated_query = query_message.replace(" ", "+")
             try:
                 await client.send_message(
                     chat_id=message.chat.id,
-                    text=Presets.MEDIA_SEND_TEXT,
+                    text=Presets.MEDIA_SEND_TEXT.format(query_message, updated_query),
                     reply_to_message_id=user_message[id],
                     reply_markup=InlineKeyboardMarkup(
                         [
