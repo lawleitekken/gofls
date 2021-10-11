@@ -127,7 +127,7 @@ async def query_mgs(client: Bot, message: Message):
             try:
                 await client.send_message(
                     chat_id=message.chat.id,
-                    text=Presets.MEDIA_SEND_TEXT.format(query_message, updated_query),
+                    text=Presets.MEDIA_SEND_TEXT.format(query_message),
                     reply_to_message_id=user_message[id],
                     reply_markup=InlineKeyboardMarkup(
                         [
