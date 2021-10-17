@@ -1,23 +1,25 @@
-# ----------------------------------- https://github.com/m4mallu/gofilesbot ------------------------------------------ #
+
 
 class Presets(object):
     CAPTION_TEXT_DOC = "\n\n<b>File Name:</b> {}\n\n<b>Format:</b> {}\n<b>Size:</b> {}"
     CAPTION_TEXT_VID = "\n\n<b>File Name:</b> {}\n\n<b>Size:</b> {}"
     ASK_PM_TEXT = "<b>Click the below button</b>"
     WELCOME_TEXT = "Hello.. <b>{}</b>\n<code>I can help you getting movies </code> " \
-                   "<code>Just Keep this message live Here</code>😉\n\n" \
+                   "<code>Just Keep this message live Here \n 𝐏𝐥𝐞𝐚𝐬𝐞 𝐄𝐧𝐚𝐛𝐥𝐢𝐧𝐠 𝐀𝐮𝐭𝐨-𝐃𝐞𝐥𝐞𝐭𝐞 𝐎𝐩𝐭𝐢𝐨𝐧 𝐅𝐨𝐫 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐭. 𝐈𝐟 𝐔 𝐃𝐨𝐧𝐭 𝐊𝐧𝐨𝐰 𝐇𝐨𝐰 𝐓𝐨 𝐄𝐧𝐚𝐛𝐥𝐞 𝐀𝐮𝐭𝐨-𝐃𝐞𝐥𝐞𝐭𝐞 𝐎𝐩𝐭𝐢𝐨𝐧 𝐩𝐥𝐳 𝐑𝐞𝐚𝐝 𝐚𝐛𝐨𝐯𝐞 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 </code>😉\n\n" \
                   
     CLEAN_CHAT_MSG = "⚠️ <b>Deleting all messages..</b>"
-    MSG_FOR_PIN = "<b>For Getting Movie Links from here..</b>\n\n🔛 <code>Please start</code> @{} in PM\n\n" \
-                  "Send the exact Movie name Example : 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮.\n\n🔊 I'll reply the Movie Links in PM if available in our channel !</code>"
+    MSG_FOR_PIN = "<b>𝐅𝐨𝐫 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐌𝐨𝐯𝐢𝐞 𝐋𝐢𝐧𝐤𝐬 𝐟𝐫𝐨𝐦 𝐡𝐞𝐫𝐞..</b>\n\n🔛 <code> 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐭𝐚𝐫𝐭 </code> @{} <code>𝐢𝐧 𝐏𝐌\n\n" \
+                  "𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐌𝐨𝐯𝐢𝐞𝐬 𝐖𝐢𝐭𝐡 𝐌𝐨𝐯𝐢𝐞 𝐍𝐚𝐦𝐞 𝐎𝐧𝐥𝐲 𝐃𝐨𝐧'𝐭 𝐓𝐲𝐩𝐞 𝐀𝐧𝐲 𝐎𝐭𝐡𝐞𝐫 𝐖𝐨𝐫𝐝𝐬.\n"\
+                  "𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 ✅\n"\
+                  "𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝐓𝐞𝐥𝐮𝐠𝐮 𝐃𝐮𝐛𝐛𝐞𝐝 ❌ \n\n🔊 𝐈'𝐥𝐥 𝐫𝐞𝐩𝐥𝐲 𝐭𝐡𝐞 𝐌𝐨𝐯𝐢𝐞 𝐋𝐢𝐧𝐤𝐬 𝐢𝐧 𝐏𝐌 𝐢𝐟 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐢𝐧 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 !</code>"
 
     BOT_PM_TEXT = "<b>Sorry.. 😢</b>\n\n<code>Bot won't work in PM, Ask in ma Group. I'll reply the file in PM if " \
                   "available in our DB !</code>"
-    PM_ERROR = "<b>Unable to send movie</b> ⛔️\n<code>Click the below button\nAsk here for movies later!</code>"
-    MEDIA_SEND_TEXT = "𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝐌𝐨𝐯𝐢𝐞: <b>{}</b>\n\n"
-    NO_MEDIA = "𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞: <b>{}</b>\n\n𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 🥺 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐨𝐥𝐥𝐨𝐰 𝐁𝐞𝐥𝐨𝐰 𝐏𝐨𝐢𝐧𝐭𝐬 \n\n" \
+    PM_ERROR = "<b>Unable to send movie</b> ⛔️\n<code>Click the below button\nTo Inform this to admin for update. #Unable </code>"
+    MEDIA_SEND_TEXT = "𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞: <b>{}</b>\n\n"
+    NO_MEDIA = "𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞: <b>{}</b>\n\n𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 🥺 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐨𝐥𝐥𝐨𝐰 𝐁𝐞𝐥𝐨𝐰 #𝐏𝐨𝐢𝐧𝐭𝐬 \n\n" \
                "⭕️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 <a href='https://www.google.com/search?q={}'> 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐢𝐧 𝐆𝐨𝐨𝐠𝐥𝐞 </a>\n" \
                "⭕️ 🔎 𝐅𝐨𝐫𝐦𝐚𝐭 : 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮 \n" \
                "⭕️ 𝐒𝐭𝐢𝐥𝐥 𝐍𝐨 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐏𝐥𝐳 𝐒𝐞𝐧𝐝 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐈𝐧\n" \
-               "⭕️ <b>Request Group: </b><a href='https://t.me/justwatch_movies'> 𝐆𝐫𝐨𝐮𝐩</a>"
+               "⭕️ <b>Request Group: </b><a href='https://t.me/justwatch_movies1'> 𝐆𝐫𝐨𝐮𝐩</a>"
     BLOCK_LIST = ['http://', 'https://', '@', '#', 'bit.ly', 't.me', '/']
