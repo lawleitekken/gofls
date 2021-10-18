@@ -21,5 +21,5 @@ class Presets(object):
                "⭕️ 𝐏𝐥𝐞𝐚𝐬𝐞 𝐂𝐡𝐞𝐜𝐤 <a href='https://www.google.com/search?q={}'> 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐢𝐧 𝐆𝐨𝐨𝐠𝐥𝐞 </a>\n" \
                "⭕️ 🔎 𝐅𝐨𝐫𝐦𝐚𝐭 : 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧 𝟐𝟎𝟐𝟏 𝐓𝐞𝐥𝐮𝐠𝐮 \n" \
                "⭕️ 𝐒𝐭𝐢𝐥𝐥 𝐍𝐨 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐏𝐥𝐳 𝐒𝐞𝐧𝐝 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐈𝐧\n" \
-               "⭕️ <b>Request Group: </b><a href='https://t.me/justwatch_movies1'> 𝐆𝐫𝐨𝐮𝐩</a> 𝐄𝐱:#𝐫𝐞𝐪 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧"
+               "⭕️ <a href='https://t.me/justwatch_movies1'>𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐆𝐫𝐨𝐮𝐩 </a> 𝐄𝐱:#𝐫𝐞𝐪 𝐒𝐩𝐢𝐝𝐞𝐫𝐌𝐚𝐧"
     BLOCK_LIST = ['http://', 'https://', '@', '#', 'bit.ly', 't.me', '/']
