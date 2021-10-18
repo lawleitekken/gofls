@@ -4,8 +4,8 @@ class Presets(object):
     CAPTION_TEXT_DOC = "\n\n<b>File Name:</b> {}\n\n<b>Format:</b> {}\n<b>Size:</b> {}"
     CAPTION_TEXT_VID = "\n\n<b>File Name:</b> {}\n\n<b>Size:</b> {}"
     ASK_PM_TEXT = "<b>Click the below button</b>"
-    WELCOME_TEXT = "Hello.. <b>{}</b>\n<code>I can help you getting movies </code> " \
-                   "<code>Just Keep this message live Here \n 𝐏𝐥𝐞𝐚𝐬𝐞 𝐄𝐧𝐚𝐛𝐥𝐢𝐧𝐠 𝐀𝐮𝐭𝐨-𝐃𝐞𝐥𝐞𝐭𝐞 𝐎𝐩𝐭𝐢𝐨𝐧 𝐅𝐨𝐫 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐭. 𝐈𝐟 𝐔 𝐃𝐨𝐧𝐭 𝐊𝐧𝐨𝐰 𝐇𝐨𝐰 𝐓𝐨 𝐄𝐧𝐚𝐛𝐥𝐞 𝐀𝐮𝐭𝐨-𝐃𝐞𝐥𝐞𝐭𝐞 𝐎𝐩𝐭𝐢𝐨𝐧 𝐩𝐥𝐳 𝐑𝐞𝐚𝐝 𝐚𝐛𝐨𝐯𝐞 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 </code>😉\n\n" \
+    WELCOME_TEXT = "Hello.. <b>{}</b>\n<code>𝐈 𝐂𝐚𝐧 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐌𝐨𝐯𝐢𝐞 𝐋𝐢𝐧𝐤𝐬 </code> " \
+                   "<code>𝐉𝐮𝐬𝐭 𝐊𝐞𝐞𝐩 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐥𝐢𝐯𝐞 𝐇𝐞𝐫𝐞😉\n 𝐏𝐥𝐞𝐚𝐬𝐞 𝐄𝐧𝐚𝐛𝐥𝐢𝐧𝐠 𝐀𝐮𝐭𝐨-𝐃𝐞𝐥𝐞𝐭𝐞 𝐎𝐩𝐭𝐢𝐨𝐧 𝐅𝐨𝐫 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐭. 𝐓𝐨𝐩 𝐑𝐢𝐠𝐡𝐭 𝐒𝐢𝐝𝐞 -> 𝐭𝐚𝐩 ⋮ -> 𝐂𝐥𝐞𝐚𝐫 𝐇𝐢𝐬𝐭𝐨𝐫𝐲 𝐭𝐡𝐞𝐧 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚 𝟐𝟒 𝐇𝐨𝐮𝐫𝐬 𝐝𝐮𝐫𝐚𝐭𝐢𝐨𝐧 -> 𝐂𝐥𝐢𝐜𝐤 𝐄𝐧𝐚𝐛𝐥𝐞 𝐀𝐮𝐭𝐨-𝐃𝐞𝐥𝐞𝐭𝐞. </code>😉\n\n" \
                   
     CLEAN_CHAT_MSG = "⚠️ <b>Deleting all messages..</b>"
     MSG_FOR_PIN = "<b>𝐅𝐨𝐫 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐌𝐨𝐯𝐢𝐞 𝐋𝐢𝐧𝐤𝐬 𝐟𝐫𝐨𝐦 𝐡𝐞𝐫𝐞..</b>\n\n🔛 <code> 𝐏𝐥𝐞𝐚𝐬𝐞 𝐬𝐭𝐚𝐫𝐭 </code> @{} <code>𝐢𝐧 𝐏𝐌\n\n" \
