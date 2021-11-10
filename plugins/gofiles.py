@@ -23,7 +23,7 @@ else:
 async def query_mgs(client: Bot, message: Message):
     query_message = message.text
     block_list = Presets.BLOCK_LIST
-    if re.search("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
+    if re.search("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*|/^(?!.*plz|bro|link).*/)"  , message.text):
         return
     if query_message.startswith(tuple(block_list)):
         return
