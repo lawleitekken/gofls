@@ -23,7 +23,7 @@ else:
 async def query_mgs(client: Bot, message: Message):
     query_message = message.text
     block_list = Presets.BLOCK_LIST
-    if re.findall("/\w/)"  , message.text):
+    if re.findall("\w)"  , message.text):
         return
     if query_message.startswith(tuple(block_list)):
         return
