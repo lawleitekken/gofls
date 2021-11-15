@@ -70,6 +70,45 @@ async def query_mgs(client: Bot, message: Message):
                         except FloodWait as e:
                             time.sleep(e.x)
                         user_message[id] = message.message_id
+                 # Looking for Document type in messages
+                async for messages in client.USER.search_messages(channel, query_message, filter="document", limit=5):
+                    doc_file_names = messages.document.file_name
+                    file_size = get_size(messages.document.file_size)
+                    if re.compile(rf'{doc_file_names}', re.IGNORECASE):
+                        try:
+                            await client.send_chat_action(
+                                chat_id=message.from_user.id,
+                                action="upload_document"
+                            )
+                        except Exception:
+                            query_bytes = query_message.encode("ascii")
+                            base64_bytes = b64encode(query_bytes)
+                            secret_query = base64_bytes.decode("ascii")
+                            await client.send_message(
+                                chat_id=message.chat.id,
+                                text=Presets.ASK_PM_TEXT,
+                                reply_to_message_id=message.message_id,
+                                reply_markup=InlineKeyboardMarkup(
+                                    [
+                                        [InlineKeyboardButton(
+                                            "👉 CLICK HERE 👈", url="t.me/{}?start={}".format(info.username, secret_query))
+                                         ]
+                                    ])
+                            )
+                            return
+                        media_name = messages.document.file_name.rsplit('.', 1)[0]
+                        media_format = messages.document.file_name.split('.')[-1]
+                        try:
+                            await client.copy_message(
+                                chat_id=message.from_user.id,
+                                from_chat_id=messages.chat.id,
+                                message_id=messages.message_id,
+                                caption=Config.GROUP_U_NAME+Presets.CAPTION_TEXT_DOC.format(media_name,
+                                                                                            media_format, file_size)
+                            )
+                        except FloodWait as e:
+                            time.sleep(e.x)
+                        user_message[id] = message.message_id
                 # Looking for video type in messages
                 async for messages in client.USER.search_messages(channel, query_message, filter="video", limit=5):
                     vid_file_names = message.caption
