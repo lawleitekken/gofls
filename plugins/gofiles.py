@@ -33,14 +33,14 @@ async def query_mgs(client: Bot, message: Message):
         try:
             for channel in Config.CHANNELS:
                 # Looking for Document type in messages
-                async for messages in client.USER.search_messages(channel, query_message, filter="photo", limit=5):
+                async for messages in client.USER.search_messages(channel, query_message, filter="document", limit=5):
                     doc_file_names = messages.caption.split("\n")[0]
                     #file_size = get_size(messages.photo.file_size)
                     if re.compile(rf'{doc_file_names}', re.IGNORECASE):
                         try:
                             await client.send_chat_action(
                                 chat_id=message.from_user.id,
-                                action="upload_photo"
+                                action="upload_document"
                             )
                         except Exception:
                             query_bytes = query_message.encode("ascii")
