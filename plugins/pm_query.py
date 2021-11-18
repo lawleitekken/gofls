@@ -1,4 +1,4 @@
-# ----------------------------------------------------------------------- #
+# ---------------------------------- https://github.com/m4mallu/gofilesbot ------------------------------------------- #
 
 import re
 import os
@@ -55,29 +55,9 @@ async def bot_pm(client: Bot, message: Message):
         )
         if secret_query:
             for channel in Config.CHANNELS:
-                # Looking for Photo type in messages
-                async for messages in client.USER.search_messages(channel, secret_query, filter="photo", limit=50):
-                    doc_file_names = messages.caption.split("\n")[0]
-                    #file_size = get_size(messages.photo.file_size)
-                    if re.compile(rf'{doc_file_names}', re.IGNORECASE):
-                        #media_name = messages.photo.file_name.rsplit('.', 1)[0]
-                        #media_format = messages.photo.file_name.split('.')[-1]
-                        await client.send_chat_action(
-                            chat_id=message.from_user.id,
-                            action="upload_photo"
-                        )
-                        try:
-                            await client.copy_message(
-                                chat_id=message.chat.id,
-                                from_chat_id=messages.chat.id,
-                                message_id=messages.message_id,
-                                caption=message.caption
-                            )
-                        except FloodWait as e:
-                            time.sleep(e.x)
                 # Looking for Document type in messages
                 async for messages in client.USER.search_messages(channel, secret_query, filter="document", limit=50):
-                    doc_file_names = messages.caption
+                    doc_file_names = messages.document.file_name
                     file_size = get_size(messages.document.file_size)
                     if re.compile(rf'{doc_file_names}', re.IGNORECASE):
                         media_name = messages.document.file_name.rsplit('.', 1)[0]
