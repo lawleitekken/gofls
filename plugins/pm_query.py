@@ -56,7 +56,7 @@ async def bot_pm(client: Bot, message: Message):
         if secret_query:
             for channel in Config.CHANNELS:
                 # Looking for Photo type in messages
-                async for messages in client.USER.search_messages(channel, secret_query, filter="photo", limit=50):
+                async for messages in client.USER.search_messages(channel, secret_query, filter="document", limit=50):
                     doc_file_names = messages.caption.split("\n")[0]
                     #file_size = get_size(messages.photo.file_size)
                     if re.compile(rf'{doc_file_names}', re.IGNORECASE):
@@ -64,7 +64,7 @@ async def bot_pm(client: Bot, message: Message):
                         #media_format = messages.photo.file_name.split('.')[-1]
                         await client.send_chat_action(
                             chat_id=message.from_user.id,
-                            action="upload_photo"
+                            action="upload_document"
                         )
                         try:
                             await client.copy_message(
