@@ -71,14 +71,14 @@ async def query_mgs(client: Bot, message: Message):
                             time.sleep(e.x)
                         user_message[id] = message.message_id
                 # Looking for video type in messages
-                async for messages in client.USER.search_messages(channel, query_message, filter="video", limit=5):
+                async for messages in client.USER.search_messages(channel, query_message, filter="document", limit=10):
                     vid_file_names = message.caption
-                    #file_size = get_size(messages.video.file_size)
+                    #file_size = get_size(messages.document.file_size)
                     if re.compile(rf'{vid_file_names}', re.IGNORECASE):
                         try:
                             await client.send_chat_action(
                                 chat_id=message.from_user.id,
-                                action="upload_video"
+                                action="upload_document"
                             )
                         except Exception:
                             query_bytes = query_message.encode("ascii")
@@ -107,22 +107,6 @@ async def query_mgs(client: Bot, message: Message):
                         except FloodWait as e:
                             time.sleep(e.x)
                         user_message[id] = message.message_id
-        except Exception:
-            try:
-                await client.send_message(
-                    chat_id=message.chat.id,
-                    text=Presets.PM_ERROR,
-                    reply_to_message_id=message.message_id,
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [InlineKeyboardButton(
-                                "👉 SEND MESSAGE 👈", url="https://t.me/justwatch_movies1")
-                             ]
-                        ])
-                )
-            except Exception:
-                pass
-            return
         if user_message.keys():
             try:
                 await client.send_message(
