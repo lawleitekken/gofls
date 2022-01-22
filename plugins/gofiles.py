@@ -116,7 +116,7 @@ async def query_mgs(client: Bot, message: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [InlineKeyboardButton(
-                                "👉 SEND MESSAGE 👈", url="https://t.me/justwatch_movies1")
+                                "👉 SEND MESSAGE 👈", url="")
                              ]
                         ])
                 )
