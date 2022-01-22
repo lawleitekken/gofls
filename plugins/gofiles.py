@@ -108,19 +108,6 @@ async def query_mgs(client: Bot, message: Message):
                             time.sleep(e.x)
                         user_message[id] = message.message_id
         except Exception:
-            try:
-                await client.send_message(
-                    chat_id=message.chat.id,
-                    text=Presets.PM_ERROR,
-                    reply_to_message_id=message.message_id,
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [InlineKeyboardButton(
-                                "👉 SEND MESSAGE 👈", url="https://t.me/justwatch_movies1")
-                             ]
-                        ])
-                )
-            except Exception:
                 pass
             return
         if user_message.keys():
