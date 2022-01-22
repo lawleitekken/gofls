@@ -107,9 +107,7 @@ async def query_mgs(client: Bot, message: Message):
                         except FloodWait as e:
                             time.sleep(e.x)
                         user_message[id] = message.message_id
-        except Exception:
-                pass
-            return
+        
         if user_message.keys():
             try:
                 await client.send_message(
