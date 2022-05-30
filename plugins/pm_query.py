@@ -92,7 +92,7 @@ async def bot_pm(client: Bot, message: Message):
                                 from_chat_id=messages.chat.id,
                                 message_id=messages.message_id,
                                 caption=message.caption,
-                                protect_content=True
+                                protect_content=True,
                             )
                         except FloodWait as e:
                             time.sleep(e.x)
