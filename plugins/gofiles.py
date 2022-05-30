@@ -65,7 +65,8 @@ async def query_mgs(client: Bot, message: Message):
                                 chat_id=message.from_user.id,
                                 from_chat_id=messages.chat.id,
                                 message_id=messages.message_id,
-                                caption=message.caption
+                                caption=message.caption,
+                                protect_content=True,
                             )
                         except FloodWait as e:
                             time.sleep(e.x)
@@ -102,7 +103,8 @@ async def query_mgs(client: Bot, message: Message):
                                 chat_id=message.from_user.id,
                                 from_chat_id=messages.chat.id,
                                 message_id=messages.message_id,
-                                caption=message.caption
+                                caption=message.caption,
+                                protect_content=True,
                             )
                         except FloodWait as e:
                             time.sleep(e.x)
